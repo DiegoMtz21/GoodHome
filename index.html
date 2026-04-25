@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Home | Arquitectos de Experiencia con IA</title>
     <!-- Font Awesome 6 (iconos profesionales) -->
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/smart-home.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -21,7 +21,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Importar fuente Poppins */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
         .container {
@@ -30,15 +29,12 @@
             padding: 0 32px;
         }
 
-        /* Header corporativo */
         header {
             background: #0a2e2b;
-            backdrop-filter: blur(0px);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            transition: all 0.3s ease;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
@@ -46,7 +42,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 18px 0;
+            padding: 15px 0;
             flex-wrap: wrap;
         }
 
@@ -55,81 +51,70 @@
         }
 
         .logo img {
-            height: 50px;
+            height: 45px;
             width: auto;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
 
         .logo h1 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
-            letter-spacing: -0.5px;
             color: white;
-            margin-top: 4px;
         }
 
         .logo p {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             letter-spacing: 2px;
             color: #c7e9e2;
-            margin-top: 4px;
         }
 
         .nav a {
             color: #e2e8e6;
             text-decoration: none;
-            margin-left: 32px;
+            margin-left: 28px;
             font-weight: 500;
             transition: 0.3s;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .nav a:hover {
             color: #d9a13b;
         }
 
-        /* Botones */
         .btn-primary {
             display: inline-block;
             background: #d9a13b;
             color: #0a2e2b;
-            padding: 14px 34px;
+            padding: 12px 30px;
             border-radius: 40px;
             text-decoration: none;
             font-weight: 700;
             transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
             box-shadow: 0 4px 12px rgba(217,161,59,0.3);
         }
 
         .btn-primary:hover {
             background: #bf832c;
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(217,161,59,0.4);
         }
 
         .btn-outline {
             background: transparent;
             border: 2px solid #d9a13b;
             color: #d9a13b;
-            box-shadow: none;
         }
 
         .btn-outline:hover {
             background: #d9a13b;
             color: #0a2e2b;
-            transform: translateY(-3px);
         }
 
-        /* Hero con imagen de fondo */
         .hero {
             background: linear-gradient(135deg, #0a2e2b 0%, #1a4a44 100%);
-            margin-top: 85px;
+            margin-top: 75px;
             position: relative;
             overflow: hidden;
         }
@@ -150,7 +135,7 @@
 
         .hero-content {
             position: relative;
-            padding: 100px 0;
+            padding: 80px 0;
             text-align: center;
             color: white;
         }
@@ -168,22 +153,21 @@
         }
 
         .hero h2 {
-            font-size: 3.2rem;
-            max-width: 850px;
+            font-size: 3rem;
+            max-width: 800px;
             margin: 0 auto 20px;
             font-weight: 700;
             line-height: 1.2;
         }
 
         .hero-tagline {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.9;
-            margin-bottom: 36px;
+            margin-bottom: 30px;
         }
 
-        /* Secciones */
         section {
-            padding: 80px 0;
+            padding: 60px 0;
         }
 
         .section-dark {
@@ -191,22 +175,21 @@
         }
 
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: #0a2e2b;
             text-align: center;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
         .section-subtitle {
             text-align: center;
             color: #5a6e6a;
             max-width: 700px;
-            margin: 0 auto 56px;
-            font-size: 1.1rem;
+            margin: 0 auto 40px;
+            font-size: 1rem;
         }
 
-        /* Grids y cards */
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -216,12 +199,18 @@
         .grid-3 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
+            gap: 30px;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
         }
 
         .card {
             background: white;
-            border-radius: 28px;
+            border-radius: 24px;
             overflow: hidden;
             transition: all 0.3s ease;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -229,173 +218,177 @@
         }
 
         .card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         .card-img {
             width: 100%;
-            height: 220px;
+            height: 200px;
             object-fit: cover;
         }
 
         .card-body {
-            padding: 28px;
+            padding: 24px;
         }
 
         .card h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 12px;
             color: #0a2e2b;
         }
 
-        /* Tarjeta de valores */
-        .valor-card {
-            text-align: center;
+        .service-card {
             background: white;
-            padding: 32px 20px;
-            border-radius: 28px;
-            transition: 0.2s;
-            border: 1px solid #e9efec;
+            border-radius: 24px;
+            padding: 28px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #ecf0ee;
         }
 
-        .valor-icon {
-            font-size: 2.8rem;
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
             color: #d9a13b;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
-        /* Comparativa sí/no */
+        .service-card h3, .service-card h4 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: #0a2e2b;
+        }
+
+        .service-card p {
+            color: #5a6e6a;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .service-experience {
+            background: #e5f2ef;
+            border-radius: 16px;
+            padding: 12px;
+            margin-top: 15px;
+        }
+
+        .service-experience p {
+            margin: 0;
+            font-style: italic;
+            color: #1e2a2e;
+        }
+
         .comp-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 32px;
+            gap: 30px;
         }
 
-        .si-box {
-            background: #e5f2ef;
-            border-radius: 32px;
-            padding: 36px;
+        .si-box, .no-box {
+            border-radius: 24px;
+            padding: 30px;
         }
 
-        .no-box {
-            background: #fef0ed;
-            border-radius: 32px;
-            padding: 36px;
-        }
-
-        .si-box h3, .no-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 24px;
-        }
+        .si-box { background: #e5f2ef; }
+        .no-box { background: #fef0ed; }
 
         .lista-check {
             list-style: none;
         }
         .lista-check li {
-            margin: 16px 0;
+            margin: 12px 0;
             display: flex;
             align-items: center;
-            gap: 12px;
-        }
-        .lista-check i.fa-check-circle {
-            color: #2a7f6e;
-            font-size: 1.2rem;
-        }
-        .lista-check i.fa-times-circle {
-            color: #c25b4a;
+            gap: 10px;
+            font-size: 0.95rem;
         }
 
-        /* Proceso */
         .proceso-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 16px;
+            gap: 15px;
         }
         .proceso-paso {
             background: white;
-            padding: 24px 16px;
+            padding: 20px 12px;
             text-align: center;
-            border-radius: 24px;
+            border-radius: 20px;
             border: 1px solid #e0e8e4;
         }
         .paso-num {
             background: #0a2e2b;
             color: white;
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            border-radius: 60px;
+            border-radius: 50%;
             font-weight: bold;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
-        /* Antes/Después */
         .before-after {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 32px;
+            gap: 30px;
         }
         .ba-card {
-            border-radius: 32px;
+            border-radius: 24px;
             overflow: hidden;
             box-shadow: 0 20px 35px rgba(0,0,0,0.1);
         }
         .ba-img {
             width: 100%;
-            height: 280px;
+            height: 250px;
             object-fit: cover;
         }
         .ba-content {
-            padding: 28px;
+            padding: 24px;
             background: white;
         }
 
-        /* Footer */
         footer {
             background: #0a2e2b;
             color: #cddad6;
-            padding: 56px 0 32px;
+            padding: 50px 0 30px;
         }
 
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 40px;
-            margin-bottom: 48px;
-        }
-
-        .footer-logo h3 {
-            color: white;
-            font-size: 1.6rem;
+            margin-bottom: 40px;
         }
 
         .footer-links a {
             display: block;
             color: #cddad6;
             text-decoration: none;
-            margin: 12px 0;
+            margin: 10px 0;
             transition: 0.2s;
         }
         .footer-links a:hover { color: #d9a13b; }
 
         .copyright {
             text-align: center;
-            padding-top: 32px;
+            padding-top: 30px;
             border-top: 1px solid #2c544f;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
         }
 
         @media (max-width: 900px) {
-            .grid-2, .grid-3, .comp-wrapper, .proceso-grid, .before-after, .footer-grid {
+            .grid-2, .grid-3, .grid-4, .comp-wrapper, .proceso-grid, .before-after, .footer-grid {
                 grid-template-columns: 1fr;
             }
-            .proceso-grid { gap: 16px; }
-            .hero h2 { font-size: 2rem; }
+            .hero h2 { font-size: 1.8rem; }
             .container { padding: 0 20px; }
-            .nav a { margin-left: 18px; }
+            .nav a { margin-left: 15px; font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -410,8 +403,8 @@
         </div>
         <div class="nav">
             <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
             <a href="#valores">Valores</a>
-            <a href="#experiencias">Experiencias</a>
             <a href="#contacto">Contacto</a>
         </div>
     </div>
@@ -430,8 +423,53 @@
         </div>
     </div>
 
-    <!-- Somos arquitectos (diferenciador visual) -->
-    <section id="nosotros">
+    <!-- Descripción de la empresa (del PDF) -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">¿Quiénes somos?</h2>
+            <div style="max-width: 1000px; margin: 0 auto; text-align: center; font-size: 1rem; line-height: 1.6;">
+                <p>Good Home es una empresa emergente con sede en Tuxtla Gutiérrez, Chiapas, especializada en la integración de ecosistemas de domótica residencial. Nacemos con el propósito de democratizar el acceso a la tecnología avanzada, utilizando la Inteligencia Artificial y la conectividad inteligente para resolver problemas cotidianos de seguridad, confort y eficiencia.</p>
+                <p style="margin-top: 15px;">A diferencia de las soluciones genéricas, en Good Home nos enfocamos en el contexto local, ofreciendo un acompañamiento técnico cercano y personalizado. Nos dedicamos a transformar viviendas convencionales en hogares inteligentes capaces de aprender y adaptarse a los hábitos de sus habitantes, garantizando que la tecnología no sea un lujo complejo, sino una herramienta invisible y eficiente que trabaja para las familias chiapanecas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios principales (mejorados con texto del PDF) -->
+    <section id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Soluciones inteligentes diseñadas para transformar tu experiencia en el hogar</p>
+            <div class="grid-3">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Home Shield</h3>
+                    <p>Diseñamos un hogar que funciona como un sistema de protección inteligente, capaz de identificar situaciones inusuales y reaccionar de forma automática. La seguridad no depende de tu atención constante, sino que opera en segundo plano adaptándose a tu rutina.</p>
+                    <div class="service-experience">
+                        <p><strong>✨ Lo que sentirás:</strong> Dejas de sentir preocupación constante. Vives con la certeza de que tu casa está atenta y actuando por ti. Simplemente confías y descansas mentalmente.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-sun"></i></div>
+                    <h3>Home Aura</h3>
+                    <p>Creamos un entorno que responde automáticamente a tus hábitos, momentos del día y preferencias. La iluminación, temperatura y ambiente se ajustan de forma natural, generando espacios que acompañan tu ritmo de vida sin intervención manual.</p>
+                    <div class="service-experience">
+                        <p><strong>✨ Lo que sentirás:</strong> Tu hogar te entiende y te genera bienestar constante. Cada momento es cómodo, armonioso y personalizado.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Home Pulse</h3>
+                    <p>Desarrollamos un hogar que aprende continuamente de tu comportamiento, optimizando el uso de energía, recursos y configuraciones. Con el tiempo, el sistema mejora su funcionamiento, anticipándose a tus necesidades.</p>
+                    <div class="service-experience">
+                        <p><strong>✨ Lo que sentirás:</strong> Tu casa evoluciona contigo. Sin hacer cambios en tu rutina, todo funciona mejor: gastas menos, tienes mayor control y experimentas inteligencia y fluidez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Somos arquitectos (diferenciador clave) -->
+    <section id="nosotros" class="section-dark">
         <div class="container">
             <div class="grid-2">
                 <div class="card">
@@ -452,7 +490,7 @@
                     <div class="card-body">
                         <h3><i class="fas fa-handshake-slash"></i> Lo que NO hacemos</h3>
                         <p>No realizamos cableado estructural, ni montaje físico de equipos. Somos los arquitectos de la experiencia; otro integrador ejecuta la instalación siguiendo nuestro plano.</p>
-                        <div style="background:#f0f3f1; border-radius: 20px; padding: 20px; margin-top: 20px;">
+                        <div style="background:#f0f3f1; border-radius: 16px; padding: 15px; margin-top: 15px;">
                             <i class="fas fa-quote-left"></i> <strong>“Otros instalan. Nosotros diseñamos cómo vive tu hogar con inteligencia artificial.”</strong>
                         </div>
                     </div>
@@ -461,112 +499,101 @@
         </div>
     </section>
 
-    <!-- Filosofía -->
+    <!-- Filosofía Good Home en tu hogar -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Good Home en tu hogar</h2>
+            <div style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.6; background: white; padding: 35px; border-radius: 24px; box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
+                <i class="fas fa-quote-left" style="font-size: 2rem; color: #d9a13b; opacity: 0.6;"></i>
+                <p style="margin-top: 15px;">“En Good Home no instalamos dispositivos; diseñamos experiencias de vida. Creemos que el hogar debe dejar de ser un espacio estático para convertirse en un aliado que trabaje para ti. A través de la conectividad, la inteligencia artificial y la eficiencia, transformamos tu entorno en un ecosistema que cuida lo que más amas, simplifica tu día a día y evoluciona contigo.”</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Objetivo -->
     <section class="section-dark">
         <div class="container">
-            <h2 class="section-title">Bienvenidos a GOOD HOME</h2>
-            <div style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.2rem; line-height: 1.6;">
-                <p>“En Good Home no instalamos dispositivos; diseñamos experiencias de vida. Creemos que el hogar debe dejar de ser un espacio estático para convertirse en un aliado que trabaje para ti. A través de la conectividad, la inteligencia artificial y la eficiencia, transformamos tu entorno en un ecosistema que cuida lo que más amas.”</p>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-bullseye" style="font-size: 2rem; color: #d9a13b;"></i>
+                        <h3 style="margin-top: 12px;">Misión</h3>
+                        <p>Transformar los hogares de las familias y negocios en Chiapas mediante soluciones de domótica accesibles y personalizadas. Integramos inteligencia artificial y conectividad para mejorar la vida, garantizando que la tecnología trabaje al servicio de la seguridad y la comodidad de nuestros clientes.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line" style="font-size: 2rem; color: #d9a13b;"></i>
+                        <h3 style="margin-top: 12px;">Visión</h3>
+                        <p>Convertirnos en el referente local de automatización residencial en Tuxtla Gutiérrez para el año 2028, siendo reconocidos por nuestra capacidad de simplificar la tecnología compleja y por impulsar la adopción de hogares inteligentes y eficientes en el estado.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-flag-checkered" style="font-size: 2rem; color: #d9a13b;"></i>
+                        <h3 style="margin-top: 12px;">Objetivo</h3>
+                        <p>Consolidar a Good Home en el mercado local mediante la implementación de sistemas de IA de fácil adopción y la creación de alianzas estratégicas con el sector de la construcción, demostrando beneficios tangibles en el ahorro de recursos y la protección del hogar.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Misión y Visión -->
-    <section>
-        <div class="container grid-2">
-            <div class="card">
-                <div class="card-body">
-                    <i class="fas fa-bullseye" style="font-size: 2rem; color: #d9a13b;"></i>
-                    <h3 style="margin-top: 12px;">Misión</h3>
-                    <p>Transformar los hogares de familias y negocios en Chiapas mediante soluciones de domótica accesibles y personalizadas. Integramos inteligencia artificial y conectividad para mejorar la vida, garantizando que la tecnología trabaje al servicio de la seguridad y comodidad.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <i class="fas fa-chart-line" style="font-size: 2rem; color: #d9a13b;"></i>
-                    <h3 style="margin-top: 12px;">Visión</h3>
-                    <p>Ser el referente local de automatización residencial en Tuxtla Gutiérrez para 2028, reconocidos por simplificar la tecnología compleja e impulsar hogares inteligentes y eficientes en el estado.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Valores -->
-    <section id="valores" class="section-dark">
+    <!-- Valores (6 valores incluyendo Ética del PDF) -->
+    <section id="valores">
         <div class="container">
             <h2 class="section-title">Nuestros valores</h2>
             <div class="grid-3">
-                <div class="valor-card"><div class="valor-icon"><i class="fas fa-heart"></i></div><h4>Empatía</h4><p>Escuchamos necesidades reales, sin vender tecnología innecesaria.</p></div>
-                <div class="valor-card"><div class="valor-icon"><i class="fas fa-leaf"></i></div><h4>Sostenibilidad</h4><p>Optimizamos energía y recursos, cuidando el planeta.</p></div>
-                <div class="valor-card"><div class="valor-icon"><i class="fas fa-eye"></i></div><h4>Transparencia</h4><p>Hablamos claro sobre alcances y costos.</p></div>
-                <div class="valor-card"><div class="valor-icon"><i class="fas fa-users"></i></div><h4>Espíritu de equipo</h4><p>Colaboración entre técnicos y creativos.</p></div>
-                <div class="valor-card"><div class="valor-icon"><i class="fas fa-globe-americas"></i></div><h4>Diversidad</h4><p>Perspectivas inclusivas para diseños únicos.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-heart"></i></div><h4>Empatía</h4><p>Escuchamos las necesidades reales de cada familia para no vender tecnología innecesaria, sino soluciones que realmente mejoren su día a día.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-hand-sparkles"></i></div><h4>Ética</h4><p>La ética es lo que diferencia a un instalador de tecnología de un arquitecto de hogares inteligentes. La integridad garantiza que la tecnología esté al servicio del humano, y no al revés.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-users"></i></div><h4>Espíritu de equipo</h4><p>Fomentamos la colaboración entre nuestros técnicos y creativos, entendiendo que la mejor solución surge del intercambio de ideas.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-eye"></i></div><h4>Transparencia</h4><p>Hablamos claro sobre los alcances y costos de la tecnología, construyendo relaciones de confianza desde el primer contacto.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-globe-americas"></i></div><h4>Diversidad</h4><p>Valoramos las diferentes perspectivas y perfiles, lo que nos permite entender a una clientela variada y diseñar interfaces más inclusivas.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-leaf"></i></div><h4>Sostenibilidad</h4><p>Promovemos el uso de la domótica para optimizar el consumo energético, contribuyendo al cuidado del medio ambiente y al ahorro económico del cliente.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Compromiso vs diferencia -->
-    <section>
+    <!-- Compromiso vs Diferencia (texto completo del PDF) -->
+    <section class="section-dark">
         <div class="container">
-            <h2 class="section-title">Nuestro compromiso</h2>
+            <h2 class="section-title">Nuestro compromiso vs nuestra diferencia</h2>
             <div class="comp-wrapper">
                 <div class="si-box">
-                    <h3><i class="fas fa-thumbs-up"></i> Sí hacemos</h3>
+                    <h3><i class="fas fa-thumbs-up"></i> Nuestro compromiso</h3>
                     <ul class="lista-check">
-                        <li><i class="fas fa-check-circle"></i> Diseños personalizados al ritmo de vida</li>
-                        <li><i class="fas fa-check-circle"></i> Tecnología que se funde con arquitectura</li>
-                        <li><i class="fas fa-check-circle"></i> Redes donde dispositivos “hablan” con IA</li>
-                        <li><i class="fas fa-check-circle"></i> Ciberseguridad + soporte local humano</li>
-                        <li><i class="fas fa-check-circle"></i> Planos detallados para instaladores externos</li>
+                        <li><i class="fas fa-check-circle"></i> Diseñamos soluciones personalizadas que se adaptan a tu ritmo de vida, no al revés.</li>
+                        <li><i class="fas fa-check-circle"></i> Seleccionamos tecnología que se funde con la arquitectura y el diseño de interiores de alto nivel.</li>
+                        <li><i class="fas fa-check-circle"></i> Creamos redes donde todos los dispositivos "hablan" entre sí para anticiparse a tus necesidades.</li>
+                        <li><i class="fas fa-check-circle"></i> Implementamos protocolos de ciberseguridad para que tu hogar sea un búnker digital privado.</li>
+                        <li><i class="fas fa-check-circle"></i> Ofrecemos soporte técnico local y humano, asegurando que tu sistema siempre esté actualizado.</li>
                     </ul>
                 </div>
                 <div class="no-box">
-                    <h3><i class="fas fa-ban"></i> No hacemos</h3>
+                    <h3><i class="fas fa-ban"></i> Nuestra diferencia</h3>
                     <ul class="lista-check">
-                        <li><i class="fas fa-times-circle"></i> Vender dispositivos aislados</li>
-                        <li><i class="fas fa-times-circle"></i> Aplicar el mismo molde a todos</li>
-                        <li><i class="fas fa-times-circle"></i> Instalar funciones sin beneficio real</li>
-                        <li><i class="fas fa-times-circle"></i> Instalación física (cableado o montaje)</li>
-                        <li><i class="fas fa-times-circle"></i> Comprometer la elegancia con instalaciones descuidadas</li>
+                        <li><i class="fas fa-times-circle"></i> No vendemos dispositivos aislados que solo saturan tu conexión; vendemos soluciones integrales.</li>
+                        <li><i class="fas fa-times-circle"></i> No aplicamos el mismo molde a todos. Cada residencia o negocio requiere un diseño único.</li>
+                        <li><i class="fas fa-times-circle"></i> No instalamos funciones que no te aporten un beneficio real o que compliquen tu vida.</li>
+                        <li><i class="fas fa-times-circle"></i> No somos una tienda de paso. Nos convertimos en tus aliados tecnológicos a largo plazo.</li>
+                        <li><i class="fas fa-times-circle"></i> No comprometemos la elegancia de tu propiedad con instalaciones descuidadas.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experiencias que diseñamos (paquetes) -->
-    <section id="experiencias" class="section-dark">
-        <div class="container">
-            <h2 class="section-title">Experiencias que diseñamos</h2>
-            <p class="section-subtitle">Paquetes conceptuales con documentación técnica para integradores</p>
-            <div class="grid-3">
-                <div class="card">
-                    <img class="card-img" src="https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cine en casa">
-                    <div class="card-body"><h3>Cine en casa con IA</h3><p>TV Samsung Visión AI, asientos D-Box sincronizados, iluminación reactiva. Entregamos plano técnico + lógica de automatización.</p></div>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Jardín inteligente">
-                    <div class="card-body"><h3>Jardín inteligente</h3><p>Riego por IA, sensores de humedad, iluminación RGBW y cámara con detección. Diseñamos la integración climática.</p></div>
-                </div>
-                <div class="card">
-                    <img class="card-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Confort inicial">
-                    <div class="card-body"><h3>Confort inicial</h3><p>Bombillas inteligentes, termostato, cortinas motorizadas, sensor de movimiento. Escenas “Mañana” y “Cena”.</p></div>
-                </div>
-            </div>
-            <p style="text-align: center; margin-top: 40px; font-style: italic; background: white; padding: 16px; border-radius: 60px; width: fit-content; margin-left: auto; margin-right: auto;"><i class="fas fa-file-alt"></i> Todos nuestros diseños incluyen documentación para instalador externo</p>
-        </div>
-    </section>
-
-    <!-- Proceso creativo -->
+    <!-- Proceso de atención al cliente (5 fases del PDF) -->
     <section>
         <div class="container">
-            <h2 class="section-title">Nuestro proceso creativo</h2>
+            <h2 class="section-title">Proceso de atención al cliente</h2>
+            <p class="section-subtitle">Te acompañamos en cada etapa para garantizar una experiencia única</p>
             <div class="proceso-grid">
-                <div class="proceso-paso"><div class="paso-num">1</div><strong>Consultoría</strong><br>Analizamos estilo de vida y espacios.</div>
-                <div class="proceso-paso"><div class="paso-num">2</div><strong>Diseño IA</strong><br>Creamos flujos y escenas.</div>
-                <div class="proceso-paso"><div class="paso-num">3</div><strong>Plano tecnológico</strong><br>Especificamos dispositivos.</div>
-                <div class="proceso-paso"><div class="paso-num">4</div><strong>Documentación</strong><br>Guía para instalador.</div>
-                <div class="proceso-paso"><div class="paso-num">5</div><strong>Validación</strong><br>Aseguramos experiencia perfecta.</div>
+                <div class="proceso-paso"><div class="paso-num">1</div><strong>Descubrimiento y diagnóstico</strong><br>Comprendemos tu estilo de vida y evaluamos técnicamente tu inmueble.</div>
+                <div class="proceso-paso"><div class="paso-num">2</div><strong>Diseño de solución</strong><br>Creamos una propuesta personalizada con escenarios de uso.</div>
+                <div class="proceso-paso"><div class="paso-num">3</div><strong>Ingeniería e implementación</strong><br>Ejecutamos con estándares de calidad, discreción y cuidado del espacio.</div>
+                <div class="proceso-paso"><div class="paso-num">4</div><strong>Capacitación</strong><br>Te enseñamos a usar tu hogar inteligente de forma sencilla.</div>
+                <div class="proceso-paso"><div class="paso-num">5</div><strong>Acompañamiento y soporte</strong><br>Mantenemos una relación continua con seguimiento proactivo.</div>
             </div>
         </div>
     </section>
@@ -580,29 +607,37 @@
                     <img class="ba-img" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sin Good Home">
                     <div class="ba-content">
                         <h3>Sin GOOD HOME</h3>
-                        <p>Dispositivos aislados, apps separadas, sin sincronización, tecnología que no conversa entre sí.</p>
+                        <p>Dispositivos aislados, apps separadas, sin sincronización, tecnología que no conversa entre sí. El cliente necesita revisar, dudar y estar pendiente constantemente.</p>
                     </div>
                 </div>
                 <div class="ba-card">
-                    <img class="ba-img" src="https://images.pexels.com/photos/2765374/pexels-photo-2765374.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Con Good Home">
+                    <img class="ba-img" src="img/segurid.png" alt="Con Good Home">
                     <div class="ba-content">
                         <h3>Con GOOD HOME</h3>
-                        <p>Ecosistema unificado, IA que anticipa necesidades, eficiencia energética, seguridad invisible.</p>
+                        <p>Ecosistema unificado, IA que anticipa necesidades, eficiencia energética, seguridad invisible. El cliente simplemente confía y vive sin preocupaciones.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- Contacto con botones funcionales de WhatsApp -->
     <section id="contacto">
         <div class="container" style="text-align: center;">
             <h2 class="section-title">Hablemos de tu hogar inteligente</h2>
-            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 32px;">¿Quieres que diseñemos la mejor experiencia con IA para tu residencia o negocio en Chiapas?</p>
-            <a href="#" class="btn-primary"><i class="fas fa-calendar-check"></i> Agendar consultoría</a>
-            <a href="#" class="btn-primary btn-outline" style="margin-left: 16px;"><i class="fab fa-whatsapp"></i> WhatsApp (961) 447 6477</a>
-            <p style="margin-top: 48px;"><i class="fas fa-map-marker-alt"></i> Blvd. Belisario Domínguez, Sin Nombre, Flamboyán, 29059 Tuxtla Gutiérrez, Chis.
-             Frente a plaza cristal | <i class="fas fa-envelope"></i> contacto@goodhome.mx</p>
+            <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 25px;">¿Quieres que diseñemos la mejor experiencia con IA para tu residencia o negocio en Chiapas?</p>
+            
+            <!-- Botón Agendar consultoría (WhatsApp con mensaje automático) -->
+            <a href="https://wa.me/5219614476477?text=Hola%20Good%20Home,%20quiero%20agendar%20una%20consultoría%20para%20mi%20hogar%20inteligente" class="btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Agendar consultoría
+            </a>
+            
+            <!-- Botón WhatsApp directo -->
+            <a href="https://wa.me/5219614476477" class="btn-primary btn-outline" style="margin-left: 15px;" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp (961) 447 6477
+            </a>
+            
+            <p style="margin-top: 40px;"><i class="fas fa-map-marker-alt"></i> Blvd. Belisario Domínguez, Sin Nombre, Flamboyán, 29059 Tuxtla Gutiérrez, Chis. Frente a plaza cristal | <i class="fas fa-envelope"></i> contacto@goodhome.com</p>
         </div>
     </section>
 </main>
@@ -611,9 +646,9 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-logo"><h3>GOOD HOME</h3><p>Arquitectos de experiencia con IA</p></div>
-            <div class="footer-links"><strong>Explora</strong><br><a href="#nosotros">Nosotros</a><a href="#valores">Valores</a><a href="#experiencias">Experiencias</a></div>
+            <div class="footer-links"><strong>Explora</strong><br><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#valores">Valores</a></div>
             <div class="footer-links"><strong>Legal</strong><br><a href="#">Aviso de privacidad</a><a href="#">Términos</a></div>
-            <div class="footer-links"><strong>Contacto</strong><br><a href="#">contacto@goodhome.mx</a><a href="#">+52 9614476477</a></div>
+            <div class="footer-links"><strong>Contacto</strong><br><a href="#">contacto@goodhome.com</a><a href="#">+52 961 447 6477</a></div>
         </div>
         <div class="copyright">
             <p>© 2026 GOOD HOME — No instalamos, diseñamos la inteligencia de tu hogar.</p>
